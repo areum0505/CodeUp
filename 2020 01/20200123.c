@@ -1,23 +1,19 @@
-﻿/* 예) n= 5인 경우,
-**
- **
-  **
-   **
-    **	
+﻿/* 1362 : 숫자 피라미드 3
+6 
+5 4 
+3 2 1 
 */
 
 #include <stdio.h>
 
 int main() {
-	int n;
+	int n, a;
 	scanf("%d", &n);
-	for (int i = 0; i < n; i++) {
-		for (int j = 0; j <= i; j++) {
-			if (j == 0)
-				printf("");
-			else
-				printf(" ");
-		}
-		printf("**\n");
+
+	a = n * (n + 1) / 2;
+	for (int i = 1; i <= n; i++) {
+		for (int j = 1; j <= i; j++)
+			printf("%d ", a--);
+		printf("\n");
 	}
-} 
+}

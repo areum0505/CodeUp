@@ -1,6 +1,9 @@
 #include <stdio.h>
 #define _CRT_SECURE_NO_WARNINGS
 
+// 사각형이 있는 곳을 1
+// 나중에 1 다 세기
+
 int main(void) {
     int arr[101][101] = { 0 };
     int x1, y1, x2, y2;

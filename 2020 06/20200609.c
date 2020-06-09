@@ -23,6 +23,6 @@ int main(void) {
         for (int j = 0; j < 101; j++) {
             if (arr[i][j] == 1) { result++; }
         }
-    }
+    } 
     printf("%d", result);
 }

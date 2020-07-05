@@ -117,3 +117,28 @@ int main()
 
   printf("%lld\n", subsetsum(a, b));
 }
+
+
+// 1568 : [기초-함수작성] 함수로 배열의 최대값 위치 리턴하기
+#include <stdio.h>
+
+int n, a, b, d[1010];
+int maxi(int a, int b) {
+    int max = a;
+    for(int i = a; i <= b; i++) {
+        if(d[max] < d[i])
+            max = i;
+    }
+    return max;
+}
+int main()
+{
+  scanf("%d", &n);
+
+  for(int i=1; i<=n; i++)
+    scanf("%d", &d[i]);
+
+  scanf("%d%d", &a, &b);
+
+  printf("%d\n", maxi(a, b));
+}

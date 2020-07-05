@@ -31,6 +31,13 @@ int mymin(int a, int b) {
 }
 
 
+// 1580 : (함수 작성) 원의 넓이
+float circle(int r) {
+	return (float)(r * r * 3.14);
+}
+
+
+
 main() {
     
 }

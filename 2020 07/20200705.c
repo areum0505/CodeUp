@@ -12,6 +12,7 @@ int main()
   printf("%d\n", min(n, m));
 }
 
+
 // 1563 : [기초-함수작성] 함수로 세 정수 중 중간 값 리턴하기 
 #include <stdio.h>
 
@@ -34,6 +35,7 @@ int main()
   printf("%d\n", mid(n, m, x));
 }
 
+
 // 1564 : [기초-함수작성] 함수로 최대공약수 리턴하기
 #include <stdio.h>
 
@@ -48,10 +50,25 @@ int gcd(int a, int b) {
     }
     return b;
 }
-  
-
 int main()
 {
   scanf("%d%d", &a, &b);
   printf("%d\n", gcd(a, b));
 }
+
+
+// 1565 : [기초-함수작성] 함수로 최소공배수 리턴하기
+#include <stdio.h>
+
+int gcd(int p, int q){ if(p==0) return q; return gcd(q%p, p);}
+
+long long int lcm(int a, int b) {
+    return (long long int)a * b / gcd(a, b);
+}
+int main()
+{
+  int a, b;
+  scanf("%d%d", &a, &b);
+  printf("%lld\n", lcm(a, b));
+}
+

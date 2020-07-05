@@ -197,3 +197,26 @@ int main()
 
   printf("%d\n", lower_bound(k));
 }
+
+
+// 1571 : [기초-함수작성] 함수로 Upper Bound 위치 리턴하기
+#include <stdio.h>
+
+int n, k, d[1010];
+int upper_bound(int k) {
+    for (int i = 1; i <= n; i++)
+        if (k < d[i])
+            return i;
+    return n + 1;
+}
+int main()
+{
+   scanf("%d", &n);
+
+  for(int i=1; i<=n; i++)
+    scanf("%d", &d[i]);
+
+  scanf("%d", &k);
+
+  printf("%d\n", upper_bound(k));
+}

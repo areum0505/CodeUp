@@ -142,3 +142,30 @@ int main()
 
   printf("%d\n", maxi(a, b));
 }
+
+
+// 1569 : [기초-함수작성] 함수로 배열의 최대값 위치 리턴하기 2
+#include <stdio.h>
+
+int n, k, d[1010];
+int findi(int k) {
+    for(int i = 1; i <= n; i++) {
+        if(k == d[i]) {
+            return i;
+        } else {
+            continue;
+        }
+    }
+    return -1;
+}
+int main()
+{
+  scanf("%d", &n);
+
+  for(int i=1; i<=n; i++)
+    scanf("%d", &d[i]);
+
+  scanf("%d", &k);
+
+  printf("%d\n", findi(k));
+}

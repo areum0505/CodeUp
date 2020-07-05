@@ -169,3 +169,31 @@ int main()
 
   printf("%d\n", findi(k));
 }
+
+
+// 1570 : [기초-함수작성] 함수로 Lower Bound 위치 리턴하기
+#include <stdio.h>
+
+int n, k, d[1010];
+int lower_bound(int k) {
+    for(int i = 1; i <= n; i++) {
+        if(d[i] >= k) {
+            return i;
+        } else {
+            continue;
+        }
+    }
+    return n+1;
+}
+
+int main()
+{
+  scanf("%d", &n);
+
+  for(int i=1; i<=n; i++)
+    scanf("%d", &d[i]);
+
+  scanf("%d", &k);
+
+  printf("%d\n", lower_bound(k));
+}

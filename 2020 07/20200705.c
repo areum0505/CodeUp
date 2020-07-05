@@ -72,3 +72,23 @@ int main()
   printf("%lld\n", lcm(a, b));
 }
 
+
+// 1566 : [기초-함수작성] 함수로 거듭제곱 리턴하기 
+#include <stdio.h>
+
+int a, n;
+long long int pow(int a, int n) {
+    long long int r = 1;
+    if (a == 1 || n == 0) return 1;
+    else {
+        for (int i = 1; i <= n; i++) {
+            r *= a;
+        }
+        return r;
+    }
+}
+int main()
+{
+  scanf("%d%d", &a, &n);
+  printf("%lld\n", pow(a, n));
+}

@@ -15,7 +15,7 @@ int main()
 
 // 1563 : [기초-함수작성] 함수로 세 정수 중 중간 값 리턴하기 
 #include <stdio.h>
-
+ 
 int n, m, x;
 
 int max(int p, int q){ return p>=q?p:q;}

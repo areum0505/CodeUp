@@ -13,6 +13,16 @@ int myabs(int a) {
 }
 
 
+// 1578 : (함수 작성) 최댓값 함수
+int mymax(int a, int b) {
+	if (a > b)
+		return a;
+	else
+		return b;
+}
+
+
+
 main() {
-    f();
+    
 }

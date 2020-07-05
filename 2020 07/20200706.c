@@ -22,6 +22,14 @@ int mymax(int a, int b) {
 }
 
 
+// 1579 : (함수 작성) 최솟값 함수
+int mymin(int a, int b) {
+	if (a < b)
+		return a;
+	else
+		return b;
+}
+
 
 main() {
     

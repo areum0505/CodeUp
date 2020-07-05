@@ -1,6 +1,6 @@
 // 1562 : [기초-함수작성] 함수로 두 정수의 작은 값 리턴하기
 #include <stdio.h>
-
+ 
 int n, m;
 int min(int p, int q)
 {

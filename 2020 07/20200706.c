@@ -82,6 +82,27 @@ void parsing2() {
 }
 
 
+// 1671 : 가위바위보 게임
+void rsp() {
+	int p, c;
+	scanf("%d %d", &p, &c);
+	
+	if (p == 0) {
+		if (c == 0) printf("tie");
+		else if (c == 1) printf("win");
+		else printf("lose");
+	} else if (p == 1) {
+		if (c == 0) printf("lose");
+		else if (c == 1) printf("tie");
+		else printf("win");
+	} else {
+		if (c == 0) printf("win");
+		else if (c == 1) printf("lose");
+		else printf("tie");
+	}
+}
+
+
 
 int main() {
 	

@@ -103,6 +103,34 @@ void rsp() {
 }
 
 
+// 1672 : 철근 자르기
+void sliceRebar() {
+	int n, k;
+	scanf("%d %d", &n, &k);
+
+	if (k == 0 || n / k >= 10000) {
+		printf("번호 초과 오류");
+	}
+	else {
+		for (int i = 1; n >= k; i++) {
+			n -= k;
+			printf("F-");
+			int current = i, temp = 0;
+			while (current > 0) {
+				current /= 10;
+				temp++;
+			}
+			temp = 4 - temp;
+			while (temp > 0) {
+				temp--;
+				printf("0");
+			}
+			printf("%d\n", i);
+		}
+	}		
+}
+
+
 
 int main() {
 	

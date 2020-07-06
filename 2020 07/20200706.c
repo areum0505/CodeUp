@@ -55,6 +55,7 @@ void line() {
 	else printf("%d\n", c);
 }
 
+
 // 1660 : 파싱(parsing) 1
 void parsing1() {
 	char str[100];
@@ -67,7 +68,21 @@ void parsing1() {
 }
 
 
+// 1661 : 파싱(parsing) 2
+void parsing2() {
+	char str[100];
+	scanf("%[^\n]", str);
+
+	for (int i = 0; str[i] != NULL; i++) {
+		if (str[i] == ',') printf(" ");
+		else if (str[i] == ';') printf("\n");
+		else if (str[i] == ' ')continue;
+		else printf("%c", str[i]);
+	}
+}
+
+
 
 int main() {
-
+	
 }

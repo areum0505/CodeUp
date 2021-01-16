@@ -10,3 +10,4 @@ for i in li:
     else:
       print(0, end = '')
   print()
+ 

@@ -11,3 +11,4 @@ for i in li:
       print(0, end = '')
   print()
  
+ 

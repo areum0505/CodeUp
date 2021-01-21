@@ -9,3 +9,4 @@ for i in range(15):
     if arr[j][i] != 0:
       print(arr[j][i], end = '')
 
+ 

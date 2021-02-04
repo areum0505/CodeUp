@@ -1,6 +1,6 @@
 a = input()
 b = '0x' + a
-c = bin(int(b, 16))
+c = bin(int(b, 16)) 
 
 s = ''
 

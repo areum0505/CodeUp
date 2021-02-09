@@ -1,0 +1,13 @@
+from datetime import date
+
+def printweek (year, month, day):
+    week = ['Monday', 'Tuesday', 'Wednesday', 'Thursday', 'Friday', 'Saturday', 'Sunday']
+    return week[date(year, month, day).weekday()]
+
+sen = input()
+arr = sen.split()
+
+print('"Mathemagic!"')
+print(pow(int(arr[0]), 2))
+print(printweek(int(arr[1]), int(arr[2]), int(arr[3])))
+

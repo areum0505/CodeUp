@@ -12,4 +12,4 @@ print(pow(int(arr[0]), 2))
 print(printweek(int(arr[1]), int(arr[2]), int(arr[3])))
 
  
- 
+  

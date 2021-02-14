@@ -4,7 +4,7 @@ max = 0
 
 for i in range(int(a), int(b) + 1):
     for j in range(int(a), int(b) + 1):
-        if i*j == int(str(i*j)[::-1]):
+        if i*j == int(str(i*j)[::-1]): 
             if i*j >= max:
                 max = i*j
 

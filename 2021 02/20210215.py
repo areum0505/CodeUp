@@ -10,3 +10,4 @@ def f(n):
 n = int(input())
 f(n)
  
+ 
